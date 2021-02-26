@@ -1,0 +1,25 @@
+#Program Penghitung Biaya Parkir
+#Kevin Alvaro Adianto 
+#71200557
+
+def harga_parkir(m,v,j=2):
+    if m == 1 :
+        if v == 1 :
+            harga=3000*j+20000
+        elif v == 2 :
+            harga=3000*j
+        
+    elif m == 2 :
+        if v == 1 :
+            harga=1000*j+10000
+        elif v == 2 :
+            harga=1000*j 
+
+    return(harga)    
+ 
+m=1
+v=2
+j=int(input("parkir: "))
+
+print(harga_parkir(m,v,j))
+
